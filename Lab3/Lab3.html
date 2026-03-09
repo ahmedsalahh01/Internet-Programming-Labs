@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Calculator</title>
+  <link rel="stylesheet" href="./Lab3.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="calculator" aria-label="Calculator">
+      <h1>My Interactive Calculator Webpage</h1>
+
+      <div class="display-wrap">
+        <div id="expression" class="expression" aria-live="polite"></div>
+        <input id="display" class="display" type="text" value="0" readonly />
+      </div>
+
+      <div class="keys" aria-label="Calculator keys">
+        <button class="key key-func" data-action="clear">AC</button>
+        <button class="key key-func" data-action="delete">DEL</button>
+        <button class="key key-func" data-action="percent">%</button>
+        <button class="key key-op" data-action="operator" data-value="/">&divide;</button>
+
+        <button class="key" data-action="digit" data-value="7">7</button>
+        <button class="key" data-action="digit" data-value="8">8</button>
+        <button class="key" data-action="digit" data-value="9">9</button>
+        <button class="key key-op" data-action="operator" data-value="*">&times;</button>
+
+        <button class="key" data-action="digit" data-value="4">4</button>
+        <button class="key" data-action="digit" data-value="5">5</button>
+        <button class="key" data-action="digit" data-value="6">6</button>
+        <button class="key key-op" data-action="operator" data-value="-">-</button>
+
+        <button class="key" data-action="digit" data-value="1">1</button>
+        <button class="key" data-action="digit" data-value="2">2</button>
+        <button class="key" data-action="digit" data-value="3">3</button>
+        <button class="key key-op" data-action="operator" data-value="+">+</button>
+
+        <button class="key zero" data-action="digit" data-value="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key key-eq" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="./Lab3.js"></script>
+</body>
+</html>
